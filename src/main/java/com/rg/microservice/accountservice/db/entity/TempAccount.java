@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Data
 @RedisHash(value = "account", timeToLive = 3600)
 public class TempAccount {
-    
+
     @Id
     private String id;
     private String email;
