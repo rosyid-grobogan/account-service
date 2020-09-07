@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TempAccountRepository extends CrudRepository<TempAccount, String>{
+    TempAccount getFirstByEmail(String email);
 }
