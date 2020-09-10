@@ -49,4 +49,8 @@ public class AccountService {
 
         return ResponseEntity.ok().build();
     }
+
+    public String testLoadBalancer() {
+        return otpClient.testLoadBalancer();
+    }
 }
